@@ -1,0 +1,1289 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Md Imamul Islam - Front-End Web Developer, UI Designer & Video Editor. 2+ years of experience crafting beautiful interfaces and cinematic experiences."
+    />
+    <meta
+      name="keywords"
+      content="Imamul Islam, Front-End Developer, UI Designer, Video Editor, Bangladesh, Portfolio"
+    />
+    <meta name="author" content="Md Imamul Islam" />
+    <title>Md Imamul Islam | Front-End Developer & UI Designer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ═══════════════════════════ CUSTOM CURSOR ═══════════════════════════ -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <!-- ═══════════════════════════ NAVBAR ═══════════════════════════════════ -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <!-- Logo -->
+        <a href="#home" class="nav-logo">
+          <span class="logo-bracket">&lt;</span> <b>IMAMUL</b>
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Right Controls -->
+        <div class="nav-controls">
+          <!-- Theme Toggle -->
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark/light mode"
+          >
+            <i class="fas fa-moon" id="themeIcon"></i>
+          </button>
+          <!-- Hamburger -->
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ═══════════════════════════ HERO SECTION ══════════════════════════════ -->
+    <section class="hero" id="home">
+      <!-- Animated background particles -->
+      <div class="hero-bg">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
+
+      <div class="container hero-container">
+        <!-- Hero Left Content -->
+        <div class="hero-content" data-aos="fade-right">
+          <p class="hero-greeting">
+            <span class="wave">👋</span> Hello, World!
+          </p>
+          <h1 class="hero-title">
+            Hi, I'm <span class="accent">Md Imamul Islam</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            I'm a <span class="typed-text" id="typedText"></span
+            ><span class="cursor-blink">|</span>
+          </h2>
+          <p class="hero-description">
+            Crafting Beautiful Interfaces &amp; Cinematic Experiences. I bring
+            ideas to life through clean code, intuitive design, and compelling
+            visual storytelling.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Hire Me
+            </a>
+            <a href="#" class="btn btn-secondary" download>
+              <i class="fas fa-download"></i> Download CV
+            </a>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="hero-socials">
+            <a
+              href="https://www.linkedin.com/in/md-imamul-islam-86477b3a4/"
+              target="_blank"
+              class="social-link"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/0ximamul"
+              target="_blank"
+              class="social-link"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/Islam.is.life4ever"
+              target="_blank"
+              class="social-link"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              class="social-link"
+              aria-label="YouTube"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a
+              href="mailto:0ximamul@gmail.com"
+              class="social-link"
+              aria-label="Email"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right - Profile Image -->
+        <div class="hero-image" data-aos="fade-left">
+          <div class="image-wrapper">
+            <div class="glow-ring"></div>
+            <div class="image-container">
+              <img
+                src="Image/Eid Image.png"
+                alt="Md Imamul Islam - Profile Photo"
+                class="profile-img"
+              />
+            </div>
+            <!-- Floating badges -->
+            <div class="float-badge badge-1">
+              <i class="fas fa-code"></i>
+              <span>2+ Yrs Exp</span>
+            </div>
+            <div class="float-badge badge-2">
+              <i class="fas fa-star"></i>
+              <span>50+ Projects</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#about" class="scroll-down" aria-label="Scroll down">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>Scroll Down</span>
+      </a>
+    </section>
+
+    <!-- ═══════════════════════════ ABOUT SECTION ═════════════════════════════ -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <p class="section-tag">Get To Know Me</p>
+          <h2 class="section-title">About <span class="accent">Me</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- About Image -->
+          <div class="about-image" data-aos="fade-right">
+            <div class="about-img-wrapper">
+              <img
+                src="Image/Image Apr 12, 2026, 01_12_55 PM.png"
+                alt="Md Imamul Islam"
+                class="about-img"
+              />
+              <div class="about-img-overlay">
+                <div class="exp-badge">
+                  <span class="exp-number">2+</span>
+                  <span class="exp-text">Years of<br />Experience</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- About Content -->
+          <div class="about-content" data-aos="fade-left">
+            <h3 class="about-name">Md Imamul Islam</h3>
+            <p class="about-role">
+              Front-End Developer · UI Designer · Video Editor
+            </p>
+
+            <p class="about-bio">
+              I'm a passionate and results-driven creative professional based in
+              Bangladesh, with a B.Sc. in Computer Science &amp; Engineering
+              from
+              <strong>Northern University Bangladesh</strong>. Over the past
+              <strong>2+ years</strong>, I've honed my craft in building
+              responsive, pixel-perfect web interfaces, designing intuitive user
+              experiences, and producing cinematic video content.
+            </p>
+            <p class="about-bio">
+              I have had the privilege of working with notable clients such as
+              <strong>Space Air Travels Ltd</strong>, consistently delivering
+              high-quality work that exceeds expectations. My approach combines
+              technical expertise with creative vision to craft digital
+              experiences that truly stand out.
+            </p>
+
+            <!-- Personal Info Grid -->
+            <div class="info-grid">
+              <div class="info-item">
+                <i class="fas fa-graduation-cap"></i>
+                <div>
+                  <span class="info-label">Education</span>
+                  <span class="info-value">B.Sc. CSE, Northern University</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <span class="info-label">Location</span>
+                  <span class="info-value">Dhaka, Bangladesh</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-briefcase"></i>
+                <div>
+                  <span class="info-label">Experience</span>
+                  <span class="info-value">2+ Years Professional</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <span class="info-label">Status</span>
+                  <span class="info-value available">Available for Hire</span>
+                </div>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Let's Talk
+            </a>
+          </div>
+        </div>
+
+        <!-- Stats Counter -->
+        <div class="stats-grid" data-aos="fade-up">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-folder-open"></i></div>
+            <div class="stat-number" data-target="50">0</div>
+            <div class="stat-plus">+</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-users"></i></div>
+            <div class="stat-number" data-target="20">0</div>
+            <div class="stat-plus">+</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-clock"></i></div>
+            <div class="stat-number" data-target="2">0</div>
+            <div class="stat-plus">+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+            <div class="stat-number" data-target="5">0</div>
+            <div class="stat-plus">+</div>
+            <div class="stat-label">Awards Won</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ SKILLS SECTION ════════════════════════════ -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <p class="section-tag">What I Know</p>
+          <h2 class="section-title">My <span class="accent">Skills</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-wrapper">
+          <!-- Front-End Skills -->
+          <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="category-title">
+              <i class="fas fa-code"></i> Front-End Development
+            </h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <div class="skill-info">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                      alt="HTML5"
+                      class="skill-icon-img"
+                    />
+                    <span class="skill-name">HTML5</span>
+                  </div>
+                  <span class="skill-percent">95%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-width="95"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-header">
+                  <div class="skill-info">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                      alt="CSS3"
+                      class="skill-icon-img"
+                    />
+                    <span class="skill-name">CSS3</span>
+                  </div>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-width="90"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-header">
+                  <div class="skill-info">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                      alt="JavaScript"
+                      class="skill-icon-img"
+                    />
+                    <span class="skill-name">JavaScript</span>
+                  </div>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-width="85"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-header">
+                  <div class="skill-info">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                      alt="React"
+                      class="skill-icon-img"
+                    />
+                    <span class="skill-name">React</span>
+                  </div>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-width="80"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-header">
+                  <div class="skill-info">
+                    <img
+                      src="Image/tailwind-css-brands-solid.png"
+                      alt="Tailwind"
+                      class="skill-icon-img"
+                    />
+                    <span class="skill-name">Tailwind CSS</span>
+                  </div>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-width="85"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- UI Design Skills -->
+          <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="category-title">
+              <i class="fas fa-palette"></i> UI/UX Design
+            </h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <div class="skill-info">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                      alt="Figma"
+                      class="skill-icon-img"
+                    />
+                    <span class="skill-name">Figma</span>
+                  </div>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-width="90"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-header">
+                  <div class="skill-info">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg"
+                      alt="Adobe XD"
+                      class="skill-icon-img"
+                    />
+                    <span class="skill-name">Adobe XD</span>
+                  </div>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-width="85"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video Editing -->
+            <h3 class="category-title" style="margin-top: 2.5rem">
+              <i class="fas fa-film"></i> Video Editing
+            </h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <div class="skill-info">
+                    <i
+                      class="fas fa-video skill-icon-fa"
+                      style="color: #9999ff"
+                    ></i>
+                    <span class="skill-name">Adobe Premiere Pro</span>
+                  </div>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-width="90"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-header">
+                  <div class="skill-info">
+                    <i
+                      class="fas fa-magic skill-icon-fa"
+                      style="color: #9999ff"
+                    ></i>
+                    <span class="skill-name">Adobe After Effects</span>
+                  </div>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-width="85"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Tags -->
+        <div class="skill-tags" data-aos="fade-up">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">React</span>
+          <span class="tag">Tailwind CSS</span>
+          <span class="tag">Figma</span>
+          <span class="tag">Adobe XD</span>
+          <span class="tag">Premiere Pro</span>
+          <span class="tag">After Effects</span>
+          <span class="tag">Responsive Design</span>
+          <span class="tag">UI/UX</span>
+          <span class="tag">Git</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ SERVICES SECTION ══════════════════════════ -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <p class="section-tag">What I Offer</p>
+          <h2 class="section-title">My <span class="accent">Services</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-icon-wrapper">
+              <div class="service-icon">
+                <i class="fas fa-globe"></i>
+              </div>
+            </div>
+            <h3 class="service-title">Web Development</h3>
+            <p class="service-desc">
+              Building fast, responsive, and scalable websites using modern
+              technologies like HTML5, CSS3, JavaScript, React, and Tailwind
+              CSS. Every pixel is crafted with precision and purpose.
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Responsive Design</li>
+              <li><i class="fas fa-check"></i> Performance Optimized</li>
+              <li><i class="fas fa-check"></i> Cross-Browser Compatible</li>
+              <li><i class="fas fa-check"></i> SEO Friendly</li>
+            </ul>
+            <a href="#contact" class="service-link">
+              Get Started <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Service 2 -->
+          <div
+            class="service-card featured"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="featured-badge">Most Popular</div>
+            <div class="service-icon-wrapper">
+              <div class="service-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+            </div>
+            <h3 class="service-title">UI/UX Design</h3>
+            <p class="service-desc">
+              Designing intuitive, user-centered interfaces that balance
+              aesthetics with functionality. From wireframes to high-fidelity
+              prototypes using Figma and Adobe XD.
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> User Research</li>
+              <li><i class="fas fa-check"></i> Wireframing & Prototyping</li>
+              <li><i class="fas fa-check"></i> Design Systems</li>
+              <li><i class="fas fa-check"></i> Pixel-Perfect UI</li>
+            </ul>
+            <a href="#contact" class="service-link">
+              Get Started <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-icon-wrapper">
+              <div class="service-icon">
+                <i class="fas fa-film"></i>
+              </div>
+            </div>
+            <h3 class="service-title">Video Editing</h3>
+            <p class="service-desc">
+              Producing cinematic, high-quality video content with Adobe
+              Premiere Pro and After Effects. From corporate videos to dynamic
+              motion graphics that captivate audiences.
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Professional Color Grading</li>
+              <li><i class="fas fa-check"></i> Motion Graphics</li>
+              <li><i class="fas fa-check"></i> VFX & Visual Effects</li>
+              <li><i class="fas fa-check"></i> Audio Synchronization</li>
+            </ul>
+            <a href="#contact" class="service-link">
+              Get Started <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ PORTFOLIO SECTION ════════════════════════ -->
+    <section class="portfolio section" id="portfolio">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <p class="section-tag">My Work</p>
+          <h2 class="section-title">
+            My <span class="accent">Portfolio</span>
+          </h2>
+          <div class="section-line"></div>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="portfolio-filters" data-aos="fade-up">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="ui">UI Design</button>
+          <button class="filter-btn" data-filter="video">Video</button>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="portfolio-grid" id="portfolioGrid">
+          <!-- Project 1 - Featured -->
+          <div
+            class="portfolio-item"
+            data-category="web"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <img
+                  src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=400&fit=crop"
+                  alt="Space Air Travels Ltd Website"
+                />
+                <div class="portfolio-overlay">
+                  <div class="portfolio-overlay-content">
+                    <span class="portfolio-category">Web Development</span>
+                    <h3 class="portfolio-title">Space Air Travels Ltd</h3>
+                    <p>
+                      Full website redesign and development for a leading travel
+                      agency.
+                    </p>
+                    <div class="portfolio-links">
+                      <a href="#" class="portfolio-btn"
+                        ><i class="fas fa-eye"></i> View Live</a
+                      >
+                      <a href="#" class="portfolio-btn outline"
+                        ><i class="fab fa-github"></i> Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <span class="portfolio-tag web">Web</span>
+                <h3>Space Air Travels Ltd</h3>
+                <p>Travel agency website with booking system</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="portfolio-item"
+            data-category="ui"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <img
+                  src="https://images.unsplash.com/photo-1555421689-491a97ff2040?w=600&h=400&fit=crop"
+                  alt="E-Commerce UI Design"
+                />
+                <div class="portfolio-overlay">
+                  <div class="portfolio-overlay-content">
+                    <span class="portfolio-category">UI/UX Design</span>
+                    <h3 class="portfolio-title">ShopEase E-Commerce</h3>
+                    <p>
+                      Complete UI/UX design for a modern e-commerce platform.
+                    </p>
+                    <div class="portfolio-links">
+                      <a href="#" class="portfolio-btn"
+                        ><i class="fas fa-eye"></i> View</a
+                      >
+                      <a href="#" class="portfolio-btn outline"
+                        ><i class="fab fa-figma"></i> Figma</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <span class="portfolio-tag ui">UI Design</span>
+                <h3>ShopEase E-Commerce</h3>
+                <p>E-commerce UI/UX design system</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div
+            class="portfolio-item"
+            data-category="video"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <img
+                  src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&h=400&fit=crop"
+                  alt="Brand Video Production"
+                />
+                <div class="portfolio-overlay">
+                  <div class="portfolio-overlay-content">
+                    <span class="portfolio-category">Video Editing</span>
+                    <h3 class="portfolio-title">TechBrand Promo</h3>
+                    <p>
+                      Corporate promotional video with cinematic color grading
+                      and motion graphics.
+                    </p>
+                    <div class="portfolio-links">
+                      <a href="#" class="portfolio-btn"
+                        ><i class="fas fa-play"></i> Watch</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <span class="portfolio-tag video">Video</span>
+                <h3>TechBrand Promo Video</h3>
+                <p>Corporate promotional video</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div
+            class="portfolio-item"
+            data-category="web"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <img
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop"
+                  alt="Restaurant Website"
+                />
+                <div class="portfolio-overlay">
+                  <div class="portfolio-overlay-content">
+                    <span class="portfolio-category">Web Development</span>
+                    <h3 class="portfolio-title">FoodieHub Restaurant</h3>
+                    <p>
+                      Modern restaurant website with online menu and reservation
+                      system.
+                    </p>
+                    <div class="portfolio-links">
+                      <a href="#" class="portfolio-btn"
+                        ><i class="fas fa-eye"></i> View Live</a
+                      >
+                      <a href="#" class="portfolio-btn outline"
+                        ><i class="fab fa-github"></i> Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <span class="portfolio-tag web">Web</span>
+                <h3>FoodieHub Restaurant</h3>
+                <p>Restaurant website with reservation system</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div
+            class="portfolio-item"
+            data-category="ui"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <img
+                  src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop"
+                  alt="Mobile App UI"
+                />
+                <div class="portfolio-overlay">
+                  <div class="portfolio-overlay-content">
+                    <span class="portfolio-category">UI/UX Design</span>
+                    <h3 class="portfolio-title">FinTrack Mobile App</h3>
+                    <p>
+                      Finance tracking mobile app UI with dark theme and clean
+                      dashboard.
+                    </p>
+                    <div class="portfolio-links">
+                      <a href="#" class="portfolio-btn"
+                        ><i class="fas fa-eye"></i> View</a
+                      >
+                      <a href="#" class="portfolio-btn outline"
+                        ><i class="fab fa-figma"></i> Figma</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <span class="portfolio-tag ui">UI Design</span>
+                <h3>FinTrack Mobile App</h3>
+                <p>Finance tracking mobile app UI</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div
+            class="portfolio-item"
+            data-category="video"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <img
+                  src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=600&h=400&fit=crop"
+                  alt="YouTube Channel Branding"
+                />
+                <div class="portfolio-overlay">
+                  <div class="portfolio-overlay-content">
+                    <span class="portfolio-category">Video Editing</span>
+                    <h3 class="portfolio-title">YouTube Intro Pack</h3>
+                    <p>
+                      Complete YouTube channel branding with animated intros and
+                      lower thirds.
+                    </p>
+                    <div class="portfolio-links">
+                      <a href="#" class="portfolio-btn"
+                        ><i class="fas fa-play"></i> Watch</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <span class="portfolio-tag video">Video</span>
+                <h3>YouTube Intro Pack</h3>
+                <p>Animated channel branding</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Portfolio Grid -->
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ TESTIMONIALS SECTION ══════════════════════ -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <p class="section-tag">Client Reviews</p>
+          <h2 class="section-title">
+            What Clients <span class="accent">Say</span>
+          </h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="testimonials-wrapper" data-aos="fade-up">
+          <!-- Carousel Track -->
+          <div class="testimonials-carousel">
+            <div class="testimonials-track" id="testimonialsTrack">
+              <!-- Testimonial 1 -->
+              <div class="testimonial-card">
+                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                <div class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i> <i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Imamul completely transformed our online presence. He built
+                  us a stunning, fully functional website that has significantly
+                  increased our bookings. His attention to detail and
+                  professional approach made the entire process seamless. Highly
+                  recommended!"
+                </p>
+                <div class="testimonial-author">
+                  <img
+                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=80&h=80&fit=crop&crop=face"
+                    alt="Rahman Hossain"
+                  />
+                  <div class="author-info">
+                    <h4>Rahman Hossain</h4>
+                    <span>CEO, Space Air Travels Ltd</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 2 -->
+              <div class="testimonial-card">
+                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                <div class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i> <i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Working with Imamul on our app UI was an absolute pleasure.
+                  He deeply understood our vision and translated it into a
+                  beautiful, intuitive design. The user engagement on our
+                  platform increased by 40% after the redesign!"
+                </p>
+                <div class="testimonial-author">
+                  <img
+                    src="https://images.unsplash.com/photo-1494790108755-2616b612b5e5?w=80&h=80&fit=crop&crop=face"
+                    alt="Priya Sharma"
+                  />
+                  <div class="author-info">
+                    <h4>Priya Sharma</h4>
+                    <span>Product Manager, TechVision BD</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 3 -->
+              <div class="testimonial-card">
+                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                <div class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i> <i class="fas fa-star"></i
+                  ><i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Imamul produced an incredible promotional video for our brand
+                  launch. The cinematic quality, color grading, and motion
+                  graphics were top-notch. Our video went viral within the first
+                  week! He is a true creative genius."
+                </p>
+                <div class="testimonial-author">
+                  <img
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face"
+                    alt="Karim Ahmed"
+                  />
+                  <div class="author-info">
+                    <h4>Karim Ahmed</h4>
+                    <span>Marketing Director, BrandX Agency</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 4 -->
+              <div class="testimonial-card">
+                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                <div class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i> <i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Exceptional developer with great communication skills. Imamul
+                  delivered our e-commerce website ahead of schedule and the
+                  quality was outstanding. He is now our go-to developer for all
+                  future projects. 10/10!"
+                </p>
+                <div class="testimonial-author">
+                  <img
+                    src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&h=80&fit=crop&crop=face"
+                    alt="Fatema Begum"
+                  />
+                  <div class="author-info">
+                    <h4>Fatema Begum</h4>
+                    <span>Founder, StyleCraft BD</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation -->
+          <div class="testimonial-nav">
+            <button
+              class="t-btn t-prev"
+              id="tPrev"
+              aria-label="Previous testimonial"
+            >
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="t-dots" id="tDots">
+              <span class="t-dot active"></span>
+              <span class="t-dot"></span>
+              <span class="t-dot"></span>
+              <span class="t-dot"></span>
+            </div>
+            <button
+              class="t-btn t-next"
+              id="tNext"
+              aria-label="Next testimonial"
+            >
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ CONTACT SECTION ═══════════════════════════ -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <p class="section-tag">Get In Touch</p>
+          <h2 class="section-title">Contact <span class="accent">Me</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info -->
+          <div class="contact-info" data-aos="fade-right">
+            <h3>Let's Work Together!</h3>
+            <p>
+              I'm always open to discussing new projects, creative ideas, or
+              opportunities to be part of your vision. Feel free to reach out!
+            </p>
+
+            <div class="contact-items">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-detail">
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:0ximamul@email.com" class="contact-value"
+                    >0ximamul@email.com</a
+                  >
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-detail">
+                  <span class="contact-label">Phone</span>
+                  <a href="tel:+8801740370521" class="contact-value"
+                    >+880 1740370521</a
+                  >
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-detail">
+                  <span class="contact-label">Location</span>
+                  <span class="contact-value">Dhaka, Bangladesh</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="contact-detail">
+                  <span class="contact-label">Working Hours</span>
+                  <span class="contact-value">Sun – Thu, 9AM – 6PM (BST)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="contact-socials">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="https://github.com" target="_blank" aria-label="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://youtube.com" target="_blank" aria-label="YouTube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper" data-aos="fade-left">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <div class="input-wrapper">
+                    <i class="fas fa-user"></i>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Your Full Name"
+                      required
+                    />
+                  </div>
+                  <span class="error-msg" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <div class="input-wrapper">
+                    <i class="fas fa-envelope"></i>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="your@email.com"
+                      required
+                    />
+                  </div>
+                  <span class="error-msg" id="emailError"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-tag"></i>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Project Discussion"
+                    required
+                  />
+                </div>
+                <span class="error-msg" id="subjectError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <div class="input-wrapper textarea-wrapper">
+                  <i class="fas fa-comment-dots"></i>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Tell me about your project..."
+                    required
+                  ></textarea>
+                </div>
+                <span class="error-msg" id="messageError"></span>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-primary btn-full"
+                id="submitBtn"
+              >
+                <i class="fas fa-paper-plane"></i>
+                <span>Send Message</span>
+              </button>
+
+              <!-- Success Message -->
+              <div class="form-success" id="formSuccess">
+                <i class="fas fa-check-circle"></i>
+                <span
+                  >Message sent successfully! I'll get back to you soon.</span
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ FOOTER ═══════════════════════════════════ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Footer Brand -->
+          <div class="footer-brand">
+            <a href="#home" class="nav-logo footer-logo">
+              <span class="logo-bracket">&lt;</span>Imamul<span
+                class="logo-bracket"
+                >/&gt;</span
+              >
+            </a>
+            <p>
+              Crafting beautiful interfaces and cinematic experiences. Available
+              for freelance projects and full-time opportunities.
+            </p>
+            <div class="footer-socials">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="https://github.com" target="_blank" aria-label="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://youtube.com" target="_blank" aria-label="YouTube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="mailto:imamul@email.com" aria-label="Email"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="footer-links">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Web Development</a></li>
+              <li><a href="#services">UI/UX Design</a></li>
+              <li><a href="#services">Video Editing</a></li>
+              <li><a href="#services">Motion Graphics</a></li>
+              <li><a href="#services">Brand Design</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="footer-contact">
+            <h4>Contact</h4>
+            <div class="footer-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Dhaka, Bangladesh</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:0ximamul@email.com">0ximamul@email.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-phone"></i>
+              <a href="tel:+8801740370521">+880 1740370521</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            © 2025 <span class="accent">Md Imamul Islam</span>. All Rights
+            Reserved.
+          </p>
+          <p>
+            Crafted with <i class="fas fa-heart" style="color: #ff4757"></i> in
+            Bangladesh
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
